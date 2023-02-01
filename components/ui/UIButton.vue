@@ -7,35 +7,25 @@
       green,
       orange
     }"
-    @click="$emit('buttonClick')"
+    @click="onClick"
   >
     <slot>
-      Default text
+      {{ title }}
     </slot>
   </button>
 </template>
 
 <script>
-export default {
-  name: 'TheButton',
-  props: {
-    red: {
-      type: Boolean,
-      default: false
-    },
-    blue: {
-      type: Boolean,
-      default: false
-    },
-    green: {
-      type: Boolean,
-      default: false
-    },
-    orange: {
-      type: Boolean,
-      default: false
-    }
-  }
+import { Component, Vue } from 'vue-property-decorator'
+
+@Component
+export default class UIButton extends Vue {
+  title = 'Default value'
+  red = false
+  blue = false
+  green = false
+  orange = false
+  onClick () {}
 }
 </script>
 
