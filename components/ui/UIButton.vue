@@ -9,9 +9,7 @@
     }"
     @click="onClick"
   >
-    <slot>
-      {{ title }}
-    </slot>
+    {{ title }}
   </button>
 </template>
 
