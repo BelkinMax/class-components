@@ -1,13 +1,13 @@
 <template>
-  <ButtonsGrid />
+  <ButtonsGridModule />
 </template>
 
 <script>
-import ButtonsGrid from '~/components/modules/ButtonsGrid/index.vue'
+import ButtonsGridModule from '~/components/modules/ButtonsGrid/index.vue'
 export default {
   name: 'IndexPage',
   components: {
-    ButtonsGrid
+    ButtonsGridModule
   }
 }
 </script>
