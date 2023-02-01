@@ -1,14 +1,18 @@
 <script>
-import { Component, Inject } from 'vue-property-decorator'
+import { Component } from 'vue-property-decorator'
 import Keys from '@/components/modules/ButtonsGrid/Keys'
 import UIButton from '@/components/ui/UIButton'
 
-@Component
+@Component({
+  inject: {
+    logOrange: {
+      from: Keys.LogOrange
+    }
+  }
+})
 export default class OrangeButton extends UIButton {
   title = 'Orange button'
   orange = true
-  @Inject({ from: Keys.LogOrange }) logOrange
-
   onClick () {
     this.logOrange()
   }
