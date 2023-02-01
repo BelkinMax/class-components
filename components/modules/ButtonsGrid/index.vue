@@ -18,9 +18,9 @@ export default class ButtonsGrid extends UIGrid {
     OrangeButton
   ]
 
-  @Provide(Keys.LogRed) logRed = LogFactory.logColor('Red', 'red')
-  @Provide(Keys.LogBlue) logBlue = LogFactory.logColor('Blue', 'blue')
-  @Provide(Keys.LogGreen) logGreen = LogFactory.logColor('Green', 'green')
-  @Provide(Keys.LogOrange) logOrange = LogFactory.logColor('Orange', 'orange')
+  @Provide(Keys.LogRed) logRed = LogFactory.logColor('Red')
+  @Provide(Keys.LogBlue) logBlue = LogFactory.logColor('Blue')
+  @Provide(Keys.LogGreen) logGreen = LogFactory.logColor('Green')
+  @Provide(Keys.LogOrange) logOrange = LogFactory.logColor('Orange')
 }
 </script>

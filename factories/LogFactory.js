@@ -1,8 +1,8 @@
 export default class LogFactory {
-  static logColor (name, color) {
+  static logColor (name) {
     return () => {
       // eslint-disable-next-line no-console
-      console.log(`%c ${name} Button Clicked `, `background: ${color}`)
+      console.log(`%c ${name} Button Clicked `, `background: ${name.toLowerCase()}`)
     }
   }
 }
